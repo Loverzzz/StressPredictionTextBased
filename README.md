@@ -36,5 +36,7 @@ Hasil evaluasi model berdasarkan metrik yang telah dihitung:
 Model memiliki performa yang cukup baik dengan AUC sebesar 0.8262, yang menunjukkan kemampuan klasifikasi yang baik. Precision dan recall yang masing-masing sebesar 76.84% dan 73.24% menunjukkan bahwa model cukup andal dalam memprediksi kelas positif, meskipun masih terdapat beberapa kesalahan (false positives dan false negatives). Nilai F1 Score sebesar 75% menunjukkan keseimbangan yang baik antara precision dan recall.
 
 Testing Model : 
+
 **Text** : 'We will be using THE RESPECTFUL PROSTITUTE by Jean Paul Sartre This is to be one presentation that includes all of these elements. I HIGHLY recommend a PowerPoint. Take a good, clear picture or scan of your ground plan and sketch and add those as slides. Organization of your presentation is important.'
+
 **Prediction** : Stress
