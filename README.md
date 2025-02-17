@@ -32,7 +32,7 @@ Proyek ini bertujuan untuk membangun model machine learning yang dapat mempredik
    Train (80%): Untuk melatih model.
    Eval (20%): Untuk evaluasi model.
    ```
-4. Data Validation
+3. Data Validation
    ```
    a. StatisticsGen
       Deskripsi:
@@ -44,7 +44,7 @@ Proyek ini bertujuan untuk membangun model machine learning yang dapat mempredik
       Deskripsi:
       Komponen ini membandingkan dataset dengan skema yang dihasilkan untuk mendeteksi anomali, seperti nilai yang hilang atau tipe data yang tidak sesuai.
    ```
-5.  Data Preprocessing (Transform)
+4.  Data Preprocessing (Transform)
    ```
    Deskripsi:
    Komponen Transform digunakan untuk melakukan preprocessing pada data. Proses ini mencakup:
@@ -53,7 +53,7 @@ Proyek ini bertujuan untuk membangun model machine learning yang dapat mempredik
    Fungsi preprocessing_fn:
    Fungsi ini mendefinisikan transformasi yang akan diterapkan pada data. Output dari transformasi ini akan digunakan untuk melatih model.
    ```
-6. Model Training (Trainer)
+5. Model Training (Trainer)
    ```
    Deskripsi:
    Komponen Trainer digunakan untuk melatih model machine learning. Berikut adalah langkah-langkahnya:
@@ -71,12 +71,12 @@ Proyek ini bertujuan untuk membangun model machine learning yang dapat mempredik
    Metrics: Binary accuracy.
    Callback seperti EarlyStopping dan ModelCheckpoint digunakan untuk mengoptimalkan proses pelatihan.
    ```
-7. Model Resolver
+6. Model Resolver
    ```
    Deskripsi:
    Komponen ini memilih model terbaik dari iterasi sebelumnya (jika ada) untuk dibandingkan dengan model baru. Hal ini memastikan bahwa model yang di-deploy adalah model yang memiliki performa terbaik.
    ```
-9. Model Evaluation (Evaluator)
+7. Model Evaluation (Evaluator)
    ```
    Deskripsi:
    Komponen Evaluator mengevaluasi performa model menggunakan metrik seperti:
@@ -87,7 +87,7 @@ Proyek ini bertujuan untuk membangun model machine learning yang dapat mempredik
    F1 Score
    Hasil evaluasi divisualisasikan menggunakan TensorFlow Model Analysis (TFMA).
    ```
-10. Model Deployment (Pusher)
+8. Model Deployment (Pusher)
     ```
     Deskripsi:
      Komponen Pusher digunakan untuk mendeploy model ke direktori tertentu jika model tersebut memenuhi kriteria evaluasi. Model yang di-deploy dapat digunakan untuk prediksi di lingkungan produksi.
