@@ -15,13 +15,12 @@ Proyek ini bertujuan untuk membangun model machine learning yang dapat mempredik
 
 **Metode Pengolahan** : 
 1. Data Preparation
-Menghapus Kolom yang Tidak Relevan
-Dataset awal memiliki beberapa kolom seperti subreddit, post_id, sentence_range, confidence, dan social_timestamp yang tidak relevan untuk model prediksi stres. Kolom-kolom ini dihapus untuk menyederhanakan dataset, hanya menyisakan dua kolom:
-
-text: Teks yang akan digunakan sebagai fitur input.
-label: Label biner (0 atau 1) yang menunjukkan apakah teks terkait stres.
-Menyimpan Dataset yang Telah Diproses
-Dataset yang telah dibersihkan disimpan kembali dalam format CSV untuk digunakan dalam pipeline.
+   Menghapus Kolom yang Tidak Relevan
+   Dataset awal memiliki beberapa kolom seperti subreddit, post_id, sentence_range, confidence, dan social_timestamp yang tidak relevan untuk model prediksi stres. Kolom-kolom ini dihapus untuk menyederhanakan dataset, hanya menyisakan dua kolom:
+   text: Teks yang akan digunakan sebagai fitur input.
+   label: Label biner (0 atau 1) yang menunjukkan apakah teks terkait stres.
+   Menyimpan Dataset yang Telah Diproses
+   Dataset yang telah dibersihkan disimpan kembali dalam format CSV untuk digunakan dalam pipeline.
 
 2. Data Ingestion (ExampleGen)
 Deskripsi:
