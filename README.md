@@ -5,7 +5,11 @@ Username dicoding: reynaldoabt
 ## Deskripsi
 **Dataset**: (https://www.kaggle.com/datasets/kreeshrajani/human-stress-prediction/data)
 
-**Masalah**: Memprediksi tingkat stres seseorang berdasarkan data sensor seperti detak jantung, aktivitas fisik, dan pola tidur.
+**Masalah**: Stres adalah salah satu kondisi psikologis yang sangat umum dialami oleh individu dalam kehidupan sehari-hari. Dalam banyak kasus, stres dapat menjadi pemicu berbagai gangguan kesehatan mental dan fisik, seperti kecemasan, depresi, hingga gangguan kardiovaskular. Di era digital saat ini, media sosial dan platform online seperti Reddit atau platform lainnya sering digunakan oleh individu untuk mencurahkan pikiran, perasaan, dan pengalaman mereka, termasuk yang berkaitan dengan stres dari text.
+
+Namun, mengidentifikasi tingkat stres seseorang berdasarkan teks yang mereka tulis di media sosial bukanlah tugas yang mudah. Teks yang ditulis sering kali bersifat subjektif, penuh dengan emosi, dan terkadang tidak langsung mengindikasikan stres secara eksplisit. Oleh karena itu, diperlukan pendekatan berbasis teknologi, seperti machine learning dan natural language processing (NLP), untuk menganalisis teks secara otomatis dan mendeteksi tanda-tanda stres.
+
+Proyek ini bertujuan untuk membangun model machine learning yang dapat memprediksi tingkat stres seseorang berdasarkan teks yang mereka tulis di sebuah platform. Dengan menggunakan data tersebut, kita dapat melatih model untuk mengenali pola-pola linguistik yang sering dikaitkan dengan stres. Pendekatan ini tidak hanya membantu dalam memahami bagaimana stres diekspresikan secara verbal, tetapi juga dapat menjadi alat yang berguna bagi para profesional kesehatan mental.
 
 **Solusi Machine Learning**: Model klasifikasi teks berbasis Neural Network dengan embedding dan lapisan dense.  untuk memprediksi tingkat stres berdasarkan fitur-fitur yang diekstrak dari data sensor.
 
@@ -19,7 +23,24 @@ Model yang digunakan memiliki arsitektur sebagai berikut:
 5. Dense Layers: Dua lapisan dense dengan aktivasi ReLU untuk menangkap pola non-linear.
 6. Output Layer: Lapisan dense dengan aktivasi sigmoid untuk menghasilkan probabilitas biner.
 
-## Evaluasi dan Performa Model 
+## Evaluasi Model 
+Berikut adalah metrik yang digunakan untuk mengevaluasi performa model:
+
+1. Binary Accuracy :Mengukur persentase prediksi yang benar.
+2. Loss : Mengukur tingkat kesalahan prediksi model.
+3. Area Under Curve (AUC) : Mengukur kemampuan model dalam membedakan antara kelas positif dan negatif.
+4. Confusion Matrix
+   ```
+   True Positives (TP): Jumlah sampel positif yang diprediksi benar.
+   False Positives (FP): Jumlah sampel negatif yang diprediksi salah sebagai positif.
+   True Negatives (TN): Jumlah sampel negatif yang diprediksi benar.
+   False Negatives (FN): Jumlah sampel positif yang diprediksi salah sebagai negatif.
+   ```
+6. Precision : Proporsi prediksi positif yang benar.
+7. Recall : Proporsi sampel positif yang diklasifikasikan dengan benar.
+8. F1 Score : Kombinasi antara precision dan recall untuk mengukur keseimbangan performa model.
+
+## Performa Model 
 Hasil evaluasi model berdasarkan metrik yang telah dihitung:
 
 1. Binary Accuracy: 0.746 (74.61%) – Model memprediksi dengan benar sekitar 74.61% dari keseluruhan data.
