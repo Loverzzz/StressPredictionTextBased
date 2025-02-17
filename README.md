@@ -35,14 +35,14 @@ Proyek ini bertujuan untuk membangun model machine learning yang dapat mempredik
 4. Data Validation
    ```
    a. StatisticsGen
-   Deskripsi:
-   Komponen ini menghitung statistik deskriptif pada dataset, seperti distribusi nilai, jumlah nilai yang hilang, dan outlier. Statistik ini digunakan untuk memahami dataset dan mendeteksi potensi masalah.
+      Deskripsi:
+      Komponen ini menghitung statistik deskriptif pada dataset, seperti distribusi nilai, jumlah nilai yang hilang, dan outlier. Statistik ini digunakan untuk memahami dataset dan mendeteksi potensi masalah.
    b. SchemaGen
-   Deskripsi:
-   Komponen ini menghasilkan skema (schema) untuk dataset berdasarkan statistik yang dihasilkan oleh StatisticsGen. Skema ini mencakup tipe data, nilai yang diharapkan, dan batasan lainnya.
+      Deskripsi:
+      Komponen ini menghasilkan skema (schema) untuk dataset berdasarkan statistik yang dihasilkan oleh StatisticsGen. Skema ini mencakup tipe data, nilai yang diharapkan, dan batasan lainnya.
    c. ExampleValidator
-   Deskripsi:
-   Komponen ini membandingkan dataset dengan skema yang dihasilkan untuk mendeteksi anomali, seperti nilai yang hilang atau tipe data yang tidak sesuai.
+      Deskripsi:
+      Komponen ini membandingkan dataset dengan skema yang dihasilkan untuk mendeteksi anomali, seperti nilai yang hilang atau tipe data yang tidak sesuai.
    ```
 5.  Data Preprocessing (Transform)
    ```
